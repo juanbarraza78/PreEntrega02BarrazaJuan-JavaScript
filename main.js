@@ -1,7 +1,9 @@
+//Declarando e inicializando constantes
 const dolar = 0.0060;
 const euro = 0.0058;
 const pesos = 5.40;
 
+//Calculadora 1: Convertidor de monedas
 function convertidorMoneda()
 {
     let valor = parseInt(document.getElementById("montoCotizador").value);
@@ -29,6 +31,7 @@ function convertidorMoneda()
 
 }
 
+//Calculadora 2: Calculadora de interes
 function calcularImporte()
 {
     let monto = parseInt(document.getElementById("montoImportes").value);
@@ -49,7 +52,7 @@ function calcularImporte()
         alert("Ingrese los datos correspondientes");
     }
 }
-
+    //Creando objeto Cliente
     class Cliente {
         constructor(nombre, apellido, dni, contrasenia) 
         {
@@ -60,13 +63,16 @@ function calcularImporte()
         }
     }
 
+    //Inicializando los clientes
     const clienteNumero1 = new Cliente("Juan", "Barraza", 42000611, 1234);
     const clienteNumero2 = new Cliente("a", "Barraza", 42000611, 1);
     const clienteNumero3 = new Cliente("Ian", "Peres", 42000611, 1234);
     const clienteNumero4 = new Cliente("Claudia", "Barraza", 42000611, 1234);
 
+    //Agregandolos a un Array
     const listaClientes = [clienteNumero1,clienteNumero2,clienteNumero3,clienteNumero4];
     
+    //Funcion ingresar usuario con contraseña y nombre
     function ingresarUsuarioContrasenia()
     {
         let flag = true;
@@ -84,6 +90,7 @@ function calcularImporte()
             });
         }while(flag);
     }
+    
     
     ingresarUsuarioContrasenia();
 
